@@ -1,7 +1,7 @@
 {
-  "versionCode": 3,
-  "versionName": "3.1.0",
+  "versionCode": 5,
+  "versionName": "3.2",
   "mandatory": false,
-  "description": "تحديث جديد يتضمن تحسينات في الأداء وإصلاح بعض المشاكل.",
+  "description": "إصلاحات طفيفة وتحسين الانميشن وإصلاح بعض الاخطاء",
   "downloadUrl": "https://github.com/obadaok/obada/raw/refs/heads/main/Platinum-hassaba.apk"
 }
