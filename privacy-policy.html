@@ -5,22 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سياسة الخصوصية - الحاسبة البلاتينية | Privacy Policy</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
             color: #333;
             background: #f5f5f5;
             padding: 20px;
-            padding-top: 60px; /* Space for the toggle button */
+            padding-top: 60px;
             transition: all 0.3s ease;
         }
-        
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -29,145 +23,29 @@
             border-radius: 12px;
             box-shadow: 0 2px 20px rgba(0,0,0,0.1);
         }
-        
-        h1 {
-            color: #00BCD4;
-            font-size: 2.2em;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        
-        .last-updated {
-            text-align: center;
-            color: #757575;
-            margin-bottom: 30px;
-            font-size: 0.95em;
-        }
-        
-        h2 {
-            color: #00838F;
-            font-size: 1.6em;
-            margin-top: 35px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #E0F7FA;
-        }
-        
-        h3 {
-            color: #00ACC1;
-            font-size: 1.3em;
-            margin-top: 25px;
-            margin-bottom: 12px;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        ul {
-            margin: 15px 0;
-            /* Use logical property for padding to support both RTL and LTR automatically */
-            padding-inline-start: 25px; 
-        }
-        
-        li {
-            margin-bottom: 10px;
-        }
-        
-        .highlight {
-            background: #E0F7FA;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            /* Use logical property for border */
-            border-inline-start: 4px solid #00BCD4;
-        }
-        
-        .warning {
-            background: #FFF3E0;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            /* Use logical property for border */
-            border-inline-start: 4px solid #FF9800;
-        }
-        
-        .success {
-            color: #4CAF50;
-            font-weight: bold;
-        }
-        
-        .error {
-            color: #F44336;
-            font-weight: bold;
-        }
-        
-        .summary-box {
-            background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%);
-            padding: 25px;
-            border-radius: 12px;
-            margin: 30px 0;
-            box-shadow: 0 4px 15px rgba(0,188,212,0.2);
-        }
-        
-        .summary-box h2 {
-            color: #00838F;
-            border: none;
-            margin-top: 0;
-        }
-        
-        .contact-box {
-            background: #F5F5F5;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #E0E0E0;
-            color: #757575;
-            font-size: 0.9em;
-        }
-
-        /* Language Toggle Button Styles */
+        h1 { color: #00BCD4; font-size: 2.2em; margin-bottom: 10px; text-align: center; }
+        .last-updated { text-align: center; color: #757575; margin-bottom: 30px; font-size: 0.95em; }
+        h2 { color: #00838F; font-size: 1.6em; margin-top: 35px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #E0F7FA; }
+        h3 { color: #00ACC1; font-size: 1.3em; margin-top: 25px; margin-bottom: 12px; }
+        p { margin-bottom: 15px; text-align: justify; }
+        ul { margin: 15px 0; padding-inline-start: 25px; }
+        li { margin-bottom: 10px; }
+        .highlight { background: #E0F7FA; padding: 20px; border-radius: 8px; margin: 20px 0; border-inline-start: 4px solid #00BCD4; }
+        .warning { background: #FFF3E0; padding: 15px; border-radius: 8px; margin: 20px 0; border-inline-start: 4px solid #FF9800; }
+        .success { color: #4CAF50; font-weight: bold; }
+        .error { color: #F44336; font-weight: bold; }
+        .summary-box { background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%); padding: 25px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 15px rgba(0,188,212,0.2); }
+        .summary-box h2 { color: #00838F; border: none; margin-top: 0; }
+        .contact-box { background: #F5F5F5; padding: 20px; border-radius: 8px; margin: 25px 0; }
+        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #E0E0E0; color: #757575; font-size: 0.9em; }
         .lang-btn {
-            position: fixed;
-            top: 20px;
-            inset-inline-end: 20px; /* Places it right in LTR, left in RTL */
-            background: #00838F;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-family: inherit;
-            font-weight: bold;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            transition: background 0.3s;
+            position: fixed; top: 20px; inset-inline-end: 20px;
+            background: #00838F; color: white; border: none; padding: 10px 20px;
+            border-radius: 25px; cursor: pointer; font-family: inherit; font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 1000; transition: background 0.3s;
         }
-
-        .lang-btn:hover {
-            background: #006064;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-            
-            h1 {
-                font-size: 1.8em;
-            }
-            
-            h2 {
-                font-size: 1.4em;
-            }
-        }
+        .lang-btn:hover { background: #006064; }
+        @media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 1.8em; } h2 { font-size: 1.4em; } }
     </style>
 </head>
 <body>
@@ -177,264 +55,150 @@
     <div class="container" id="content-ar">
         <h1>سياسة الخصوصية</h1>
         <h1 style="font-size: 1.5em; color: #00ACC1;">الحاسبة البلاتينية</h1>
-        <p class="last-updated"><strong>آخر تحديث:</strong> 11 فبراير 2025</p>
+        <p class="last-updated"><strong>آخر تحديث:</strong> 13 فبراير 2026</p>
 
         <div class="highlight">
-            <h3>⚡ الملخص السريع</h3>
-            <p><strong>الحاسبة البلاتينية لا تجمع أي بيانات شخصية منك على الإطلاق.</strong> التطبيق يعمل بالكامل على جهازك المحلي ولا يرسل أي معلومات لأي مكان.</p>
+            <h3>⚡ إخلاء مسؤولية قانوني وموجز</h3>
+            <p><strong>الخصوصية أولاً:</strong> تلتزم "الحاسبة البلاتينية" بحماية خصوصية المستخدمين بشكل كامل. التطبيق مصمم ليعمل كأداة محلية (Offline-First)، ولا نقوم بجمع أو نقل أو بيع أي بيانات شخصية أو سجلات مالية لأي خوادم خارجية.</p>
         </div>
 
-        <h2>📋 مقدمة</h2>
-        <p>نحن في الحاسبة البلاتينية ("نحن"، "لنا"، "الخاص بنا") نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. توضح سياسة الخصوصية هذه كيفية تعاملنا مع معلوماتك عند استخدام تطبيق الحاسبة البلاتينية.</p>
-
-        <h2>🔒 المعلومات التي نجمعها</h2>
-        
-        <h3>المعلومات التي لا نجمعها</h3>
-        <p><strong class="success">الحاسبة البلاتينية لا تجمع أي بيانات شخصية منك.</strong></p>
-        
-        <p>تحديداً، نحن <strong>لا نجمع</strong>:</p>
+        <h2>🔒 سياسة جمع البيانات</h2>
+        <p>نؤكد للمستخدم بشكل قاطع ما يلي:</p>
         <ul>
-            <li><span class="error">❌</span> الاسم أو البريد الإلكتروني</li>
-            <li><span class="error">❌</span> رقم الهاتف</li>
-            <li><span class="error">❌</span> الموقع الجغرافي</li>
-            <li><span class="error">❌</span> العمليات الحسابية التي تقوم بها</li>
-            <li><span class="error">❌</span> سجل الاستخدام</li>
-            <li><span class="error">❌</span> معلومات الجهاز</li>
-            <li><span class="error">❌</span> عنوان IP</li>
-            <li><span class="error">❌</span> أي معلومات تعريفية أخرى</li>
+            <li><span class="success">✅</span> <strong>المعالجة المحلية:</strong> جميع العمليات الحسابية والبيانات المدخلة تتم معالجتها وحفظها محلياً على جهاز المستخدم.</li>
+            <li><span class="error">❌</span> <strong>عدم جمع الهوية:</strong> لا نطلب ولا نجمع الأسماء، أرقام الهواتف، البريد الإلكتروني، أو الموقع الجغرافي.</li>
+            <li><span class="error">❌</span> <strong>عدم التتبع:</strong> لا نستخدم ملفات تعريف الارتباط (Cookies) أو أدوات تحليل سلوك المستخدم.</li>
         </ul>
 
-        <h3>البيانات المحلية</h3>
-        <p>التطبيق يخزن البيانات التالية محلياً على جهازك فقط:</p>
-        <ul>
-            <li><strong>سجل العمليات الحسابية</strong>: يتم حفظه محلياً ويمكنك حذفه في أي وقت</li>
-            <li><strong>الإعدادات والتفضيلات</strong>: مثل الثيم والوضع الخاص</li>
-            <li><strong>البيانات المؤقتة</strong>: للأداء الأمثل للتطبيق</li>
-        </ul>
-        
-        <div class="highlight">
-            <p><strong>✅ هذه البيانات لا تغادر جهازك أبداً</strong> ويمكنك حذفها بالكامل في أي وقت.</p>
-        </div>
+        <h2>🔐 تبرير الأذونات المطلوبة (Permissions)</h2>
+        <p>لضمان الشفافية، نوضح أدناه الأسباب التقنية والقانونية لطلب الأذونات المذكورة في التطبيق:</p>
 
-        <h2>🔐 الأذونات المطلوبة</h2>
-
-        <h3>1. إذن النافذة العائمة (SYSTEM_ALERT_WINDOW)</h3>
+        <h3>1. النوافذ المنبثقة (SYSTEM_ALERT_WINDOW)</h3>
         <ul>
-            <li><strong>الغرض:</strong> للسماح بعرض النافذة الحاسبة العائمة فوق التطبيقات الأخرى</li>
-            <li><strong>الاستخدام:</strong> فقط عند تفعيل ميزة النافذة العائمة</li>
-            <li><strong class="error">لا يتم:</strong> جمع أي معلومات أو الوصول إلى محتوى التطبيقات الأخرى</li>
+            <li><strong>الوصف:</strong> إذن "الظهور فوق التطبيقات الأخرى".</li>
+            <li><strong>الغرض المشروع:</strong> تمكين ميزة "الآلة الحاسبة العائمة" لتتيح للمستخدم إجراء الحسابات أثناء استخدام تطبيقات أخرى دون الحاجة لإغلاقها.</li>
         </ul>
 
-        <h3>2. إذن الاهتزاز (VIBRATE)</h3>
+        <h3>2. الوصول للإنترنت والشبكة (INTERNET & ACCESS_NETWORK_STATE)</h3>
         <ul>
-            <li><strong>الغرض:</strong> لتوفير ردود فعل لمسية عند الضغط على الأزرار</li>
-            <li><strong>الاستخدام:</strong> فقط عند الضغط على أزرار الآلة الحاسبة</li>
+            <li><strong>الوصف:</strong> الوصول الكامل للشبكة وعرض حالة الاتصال.</li>
+            <li><strong>الغرض المشروع:</strong> يُستخدم هذا الإذن حصرياً <strong>للتحقق من وجود تحديثات جديدة للتطبيق</strong> وتنزيلها لضمان حصول المستخدم على أحدث الميزات والإصلاحات الأمنية. لا يتم نقل أي بيانات خاصة عبر هذا الاتصال.</li>
         </ul>
 
-        <h3>3. إذن الإنترنت (INTERNET) - اختياري</h3>
+        <h3>3. طلب تثبيت الحزم (REQUEST_INSTALL_PACKAGES)</h3>
         <ul>
-            <li><strong>الغرض:</strong> للتحقق من التحديثات المتاحة للتطبيق فقط</li>
-            <li><strong>الاستخدام:</strong> فقط عند فتح التطبيق للتحقق من وجود إصدار جديد</li>
-            <li><strong class="error">لا يتم:</strong> إرسال أي بيانات شخصية أو عمليات حسابية</li>
+            <li><strong>الوصف:</strong> السماح للتطبيق بطلب تثبيت تطبيقات أخرى (تحديثات).</li>
+            <li><strong>الغرض المشروع:</strong> هذا الإذن ضروري لميزة <strong>"التحديث الذاتي"</strong>. عند قيام التطبيق بتنزيل إصدار جديد، يحتاج لهذا الإذن ليتمكن من استبدال النسخة القديمة بالنسخة الجديدة تلقائياً وسلسلة، بناءً على طلب المستخدم.</li>
         </ul>
 
-        <h2>🚫 ما لا نفعله ببياناتك</h2>
-        <p>نظراً لأننا <strong>لا نجمع أي معلومات</strong>، فإننا:</p>
+        <h3>4. الذاكرة الخارجية (WRITE_EXTERNAL_STORAGE)</h3>
         <ul>
-            <li><span class="error">❌</span> لا نبيع بياناتك</li>
-            <li><span class="error">❌</span> لا نشارك بياناتك مع أطراف ثالثة</li>
-            <li><span class="error">❌</span> لا نستخدم بياناتك للإعلانات</li>
-            <li><span class="error">❌</span> لا نقوم بتحليل بياناتك</li>
-            <li><span class="error">❌</span> لا نتتبع نشاطك</li>
+            <li><strong>الوصف:</strong> تعديل أو حذف محتويات بطاقة SD.</li>
+            <li><strong>القيد التقني:</strong> هذا الإذن مطلوب <strong>فقط للأجهزة القديمة</strong> (Android 9 / API 28 وما قبل).</li>
+            <li><strong>الغرض المشروع:</strong> يُستخدم مؤقتاً لحفظ ملف التحديث (APK) في مجلد التنزيلات قبل تثبيته. بالنسبة للأجهزة الحديثة، لا يتم استخدام هذا الإذن.</li>
         </ul>
 
-        <h2>🔌 خدمات الطرف الثالث</h2>
+        <h3>5. الاهتزاز (VIBRATE)</h3>
+        <ul>
+            <li><strong>الغرض:</strong> تحسين تجربة المستخدم عبر توفير استجابة لمسية عند الضغط على الأزرار.</li>
+        </ul>
+
+        <h2>🚫 مشاركة البيانات والأطراف الثالثة</h2>
         <div class="warning">
-            <p><strong>التطبيق لا يستخدم أي خدمات طرف ثالث</strong> مثل Google Analytics أو Firebase أو شبكات الإعلانات.</p>
-            <p><strong>التطبيق لا يحتوي على إعلانات.</strong></p>
+            <p>نحن لا نستخدم أي خدمات إعلانية (Ad Networks) ولا نشارك أي بيانات مع منصات التحليل (مثل Google Analytics). التطبيق خالٍ تماماً من الإعلانات وبرمجيات التتبع.</p>
         </div>
 
-        <h2>🛡️ أمان البيانات</h2>
-        <p>نظراً لأن جميع بياناتك مخزنة محلياً على جهازك فقط:</p>
+        <h2>🛡️ أمان البيانات المحلية</h2>
+        <p>بما أن البيانات مخزنة على جهازك:</p>
         <ul>
-            <li>أنت المسؤول الوحيد عن أمان جهازك</li>
-            <li>ننصح بتفعيل قفل الشاشة وتشفير الجهاز</li>
-            <li>البيانات محمية بواسطة نظام أمان Android</li>
+            <li>يحتفظ المستخدم بالملكية الكاملة والسيطرة على بياناته.</li>
+            <li>يمكن للمستخدم مسح سجل العمليات أو إلغاء تثبيت التطبيق وسيتم حذف كافة البيانات المرتبطة به فوراً.</li>
         </ul>
 
-        <h2>👤 حقوق المستخدم</h2>
-        <p>لديك الحق في:</p>
-        <ul>
-            <li><span class="success">✅</span> حذف جميع بياناتك المحلية في أي وقت</li>
-            <li><span class="success">✅</span> تعطيل أي ميزة لا ترغب باستخدامها</li>
-            <li><span class="success">✅</span> إلغاء تثبيت التطبيق في أي وقت</li>
-            <li><span class="success">✅</span> استخدام التطبيق بدون اتصال بالإنترنت</li>
-        </ul>
-
-        <h2>👶 خصوصية الأطفال</h2>
-        <p><strong class="success">التطبيق آمن تماماً للأطفال دون 13 عاماً</strong> لأنه:</p>
-        <ul>
-            <li>لا يجمع أي معلومات شخصية</li>
-            <li>لا يحتوي على إعلانات</li>
-            <li>لا يتطلب إنشاء حساب</li>
-            <li>لا يتصل بالإنترنت (إلا للتحديثات فقط)</li>
-        </ul>
-
-        <h2>📞 اتصل بنا</h2>
+        <h2>📞 التواصل والدعم</h2>
         <div class="contact-box">
+            <p>للاستفسارات القانونية أو التقنية حول سياسة الخصوصية:</p>
             <p><strong>البريد الإلكتروني:</strong> <a href="mailto:hamdrake1@gmail.com">hamdrake1@gmail.com</a></p>
-            <p><strong>اسم المطور:</strong> Platinum VIP</p>
-            <p><strong>اسم التطبيق:</strong> الحاسبة البلاتينية</p>
-            <p><strong>الحزمة:</strong> com.platinum.vip.hasiba</p>
-        </div>
-
-        <div class="summary-box">
-            <h2>📝 ملخص سياسة الخصوصية</h2>
-            <ul style="list-style: none; padding-right: 0;">
-                <li><span class="success">✅</span> لا نجمع أي بيانات شخصية</li>
-                <li><span class="success">✅</span> لا توجد إعلانات</li>
-                <li><span class="success">✅</span> لا يوجد تتبع</li>
-                <li><span class="success">✅</span> جميع البيانات محلية على جهازك</li>
-                <li><span class="success">✅</span> يمكنك حذف كل شيء في أي وقت</li>
-                <li><span class="success">✅</span> آمن 100% لخصوصيتك</li>
-            </ul>
+            <p><strong>المطور:</strong> Platinum VIP</p>
         </div>
 
         <div class="footer">
-            <p><strong>© 2025 الحاسبة البلاتينية. جميع الحقوق محفوظة.</strong></p>
-            <p>آخر تحديث: 11 فبراير 2025</p>
+            <p><strong>© 2026 الحاسبة البلاتينية. جميع الحقوق محفوظة.</strong></p>
         </div>
     </div>
 
     <div class="container" id="content-en" style="display: none;">
         <h1>Privacy Policy</h1>
         <h1 style="font-size: 1.5em; color: #00ACC1;">Platinum Calculator</h1>
-        <p class="last-updated"><strong>Last Updated:</strong> February 11, 2025</p>
+        <p class="last-updated"><strong>Last Updated:</strong> February 13, 2026</p>
 
         <div class="highlight">
-            <h3>⚡ Quick Summary</h3>
-            <p><strong>Platinum Calculator does not collect any personal data from you at all.</strong> The app operates entirely locally on your device and does not send any information anywhere.</p>
+            <h3>⚡ Legal Disclaimer & Summary</h3>
+            <p><strong>Privacy First:</strong> "Platinum Calculator" is committed to protecting user privacy. The application is designed as an offline-first tool and does not collect, transmit, or sell any personal data or financial records to external servers.</p>
         </div>
 
-        <h2>📋 Introduction</h2>
-        <p>We at Platinum Calculator ("we", "us", "our") respect your privacy and are committed to protecting your personal data. This privacy policy explains how we handle your information when you use the Platinum Calculator application.</p>
-
-        <h2>🔒 Information We Collect</h2>
-        
-        <h3>Information We DO NOT Collect</h3>
-        <p><strong class="success">Platinum Calculator does not collect any personal data from you.</strong></p>
-        
-        <p>Specifically, we <strong>DO NOT collect</strong>:</p>
+        <h2>🔒 Data Collection Policy</h2>
+        <p>We explicitly assure the user of the following:</p>
         <ul>
-            <li><span class="error">❌</span> Name or Email Address</li>
-            <li><span class="error">❌</span> Phone Number</li>
-            <li><span class="error">❌</span> Geographic Location</li>
-            <li><span class="error">❌</span> Your Calculations</li>
-            <li><span class="error">❌</span> Usage History</li>
-            <li><span class="error">❌</span> Device Information</li>
-            <li><span class="error">❌</span> IP Address</li>
-            <li><span class="error">❌</span> Any other identifying information</li>
+            <li><span class="success">✅</span> <strong>Local Processing:</strong> All calculations and input data are processed and stored locally on the user's device.</li>
+            <li><span class="error">❌</span> <strong>No Identity Collection:</strong> We do not request or collect names, phone numbers, emails, or geolocation data.</li>
+            <li><span class="error">❌</span> <strong>No Tracking:</strong> We do not use cookies or user behavior analysis tools.</li>
         </ul>
 
-        <h3>Local Data</h3>
-        <p>The app stores the following data locally on your device only:</p>
-        <ul>
-            <li><strong>Calculation History</strong>: Saved locally and can be deleted by you at any time.</li>
-            <li><strong>Settings and Preferences</strong>: Such as theme and private mode.</li>
-            <li><strong>Temporary Data</strong>: For optimal app performance.</li>
-        </ul>
-        
-        <div class="highlight">
-            <p><strong>✅ This data never leaves your device</strong> and you can delete it completely at any time.</p>
-        </div>
+        <h2>🔐 Permissions Justification</h2>
+        <p>For transparency, we detail below the technical and legal reasons for the permissions requested in the app manifest:</p>
 
-        <h2>🔐 Permissions Required</h2>
-
-        <h3>1. Floating Window Permission (SYSTEM_ALERT_WINDOW)</h3>
+        <h3>1. System Alert Window (SYSTEM_ALERT_WINDOW)</h3>
         <ul>
-            <li><strong>Purpose:</strong> To allow the floating calculator window to display over other apps.</li>
-            <li><strong>Usage:</strong> Only when the floating window feature is activated.</li>
-            <li><strong class="error">Does NOT:</strong> Collect any information or access content of other apps.</li>
+            <li><strong>Description:</strong> "Display over other apps" permission.</li>
+            <li><strong>Legitimate Purpose:</strong> Enables the <strong>"Floating Calculator"</strong> feature, allowing users to perform calculations while multitasking on other apps without closing them.</li>
         </ul>
 
-        <h3>2. Vibration Permission (VIBRATE)</h3>
+        <h3>2. Internet & Network Access (INTERNET & ACCESS_NETWORK_STATE)</h3>
         <ul>
-            <li><strong>Purpose:</strong> To provide haptic feedback when buttons are pressed.</li>
-            <li><strong>Usage:</strong> Only when calculator buttons are pressed.</li>
+            <li><strong>Description:</strong> Full network access and view network connections.</li>
+            <li><strong>Legitimate Purpose:</strong> Used exclusively to <strong>check for app updates</strong> and ensure connection stability during the download. No private user data is transmitted via this connection.</li>
         </ul>
 
-        <h3>3. Internet Permission (INTERNET) - Optional</h3>
+        <h3>3. Request Install Packages (REQUEST_INSTALL_PACKAGES)</h3>
         <ul>
-            <li><strong>Purpose:</strong> To check for available app updates only.</li>
-            <li><strong>Usage:</strong> Only when opening the app to check for a new version.</li>
-            <li><strong class="error">Does NOT:</strong> Send any personal data or calculations.</li>
+            <li><strong>Description:</strong> Allows the app to request the installation of packages.</li>
+            <li><strong>Legitimate Purpose:</strong> Essential for the <strong>"Self-Update"</strong> feature. When a new version is downloaded by the app, this permission allows the app to initiate the installation of the update seamlessly upon user approval.</li>
         </ul>
 
-        <h2>🚫 What We Do Not Do With Your Data</h2>
-        <p>Since we <strong>do not collect any information</strong>, we:</p>
+        <h3>4. External Storage (WRITE_EXTERNAL_STORAGE)</h3>
         <ul>
-            <li><span class="error">❌</span> Do not sell your data</li>
-            <li><span class="error">❌</span> Do not share your data with third parties</li>
-            <li><span class="error">❌</span> Do not use your data for advertising</li>
-            <li><span class="error">❌</span> Do not analyze your data</li>
-            <li><span class="error">❌</span> Do not track your activity</li>
+            <li><strong>Description:</strong> Modify or delete the contents of your SD card.</li>
+            <li><strong>Technical Limitation:</strong> This is required <strong>only for legacy devices</strong> (Android 9 / API 28 and below).</li>
+            <li><strong>Legitimate Purpose:</strong> Used to temporarily save the update file (APK) in the downloads folder before installation. Modern Android devices do not utilize this permission for this purpose.</li>
         </ul>
 
-        <h2>🔌 Third-Party Services</h2>
+        <h3>5. Vibration (VIBRATE)</h3>
+        <ul>
+            <li><strong>Purpose:</strong> To provide haptic feedback for better user experience when buttons are pressed.</li>
+        </ul>
+
+        <h2>🚫 Third Parties & Data Sharing</h2>
         <div class="warning">
-            <p><strong>The app does not use any third-party services</strong> such as Google Analytics, Firebase, or ad networks.</p>
-            <p><strong>The app contains no advertisements.</strong></p>
+            <p>We do not use any Ad Networks and do not share data with analytics platforms (like Google Analytics). The app is completely ad-free and tracker-free.</p>
         </div>
 
-        <h2>🛡️ Data Security</h2>
-        <p>Since all your data is stored locally on your device only:</p>
+        <h2>🛡️ Local Data Security</h2>
+        <p>Since data is stored on your device:</p>
         <ul>
-            <li>You are solely responsible for your device's security.</li>
-            <li>We recommend enabling screen lock and device encryption.</li>
-            <li>Data is protected by the Android security system.</li>
+            <li>The user retains full ownership and control over their data.</li>
+            <li>Deleting the app or clearing its data will permanently remove all associated records from the device.</li>
         </ul>
 
-        <h2>👤 User Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li><span class="success">✅</span> Delete all your local data at any time.</li>
-            <li><span class="success">✅</span> Disable any feature you do not wish to use.</li>
-            <li><span class="success">✅</span> Uninstall the app at any time.</li>
-            <li><span class="success">✅</span> Use the app without an internet connection.</li>
-        </ul>
-
-        <h2>👶 Children's Privacy</h2>
-        <p><strong class="success">The app is completely safe for children under 13</strong> because it:</p>
-        <ul>
-            <li>Does not collect any personal information.</li>
-            <li>Contains no advertisements.</li>
-            <li>Does not require account creation.</li>
-            <li>Does not connect to the internet (except for updates only).</li>
-        </ul>
-
-        <h2>📞 Contact Us</h2>
+        <h2>📞 Contact & Support</h2>
         <div class="contact-box">
+            <p>For legal or technical inquiries regarding this privacy policy:</p>
             <p><strong>Email:</strong> <a href="mailto:hamdrake1@gmail.com">hamdrake1@gmail.com</a></p>
-            <p><strong>Developer Name:</strong> Platinum VIP</p>
-            <p><strong>App Name:</strong> Platinum Calculator</p>
-            <p><strong>Package:</strong> com.platinum.vip.hasiba</p>
-        </div>
-
-        <div class="summary-box">
-            <h2>📝 Policy Summary</h2>
-            <ul style="list-style: none; padding-inline-start: 0;">
-                <li><span class="success">✅</span> We collect no personal data</li>
-                <li><span class="success">✅</span> No advertisements</li>
-                <li><span class="success">✅</span> No tracking</li>
-                <li><span class="success">✅</span> All data is local on your device</li>
-                <li><span class="success">✅</span> You can delete everything at any time</li>
-                <li><span class="success">✅</span> 100% safe for your privacy</li>
-            </ul>
+            <p><strong>Developer:</strong> Platinum VIP</p>
         </div>
 
         <div class="footer">
-            <p><strong>© 2025 Platinum Calculator. All Rights Reserved.</strong></p>
-            <p>Last Updated: February 11, 2025</p>
+            <p><strong>© 2026 Platinum Calculator. All Rights Reserved.</strong></p>
         </div>
     </div>
 
@@ -447,21 +211,18 @@
 
         function setLanguage(lang) {
             if (lang === 'en') {
-                // Switch to English
                 contentAr.style.display = 'none';
                 contentEn.style.display = 'block';
                 htmlTag.setAttribute('dir', 'ltr');
                 htmlTag.setAttribute('lang', 'en');
-                btn.textContent = 'العربية'; // Button shows option to switch back
+                btn.textContent = 'العربية';
             } else {
-                // Switch to Arabic
                 contentEn.style.display = 'none';
                 contentAr.style.display = 'block';
                 htmlTag.setAttribute('dir', 'rtl');
                 htmlTag.setAttribute('lang', 'ar');
-                btn.textContent = 'English'; // Button shows option to switch back
+                btn.textContent = 'English';
             }
-            // Save preference
             localStorage.setItem('preferredLanguage', lang);
         }
 
@@ -474,20 +235,16 @@
             }
         }
 
-        // Initialize on load
         window.addEventListener('DOMContentLoaded', () => {
-            // 1. Check saved preference
             const savedLang = localStorage.getItem('preferredLanguage');
-            
             if (savedLang) {
                 setLanguage(savedLang);
             } else {
-                // 2. If no preference, check browser language
                 const userLang = navigator.language || navigator.userLanguage; 
                 if (userLang.startsWith('en')) {
                     setLanguage('en');
                 } else {
-                    setLanguage('ar'); // Default to Arabic for other languages
+                    setLanguage('ar');
                 }
             }
         });
