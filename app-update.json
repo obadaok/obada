@@ -1,15 +1,14 @@
 {
   "versionCode": 4,
-  "versionName": "3.2",
+  "versionName": "v3.1",
   "downloadUrl": "https://raw.githubusercontent.com/obadaok/obada/main/Platinum-hassaba.apk",
   "fileSize": 11.9,
-  "changelog": " تحسينات في الواجهة وتحسين الآداء",
+  "changelog": "✨ التحسينات الجديدة:\n• تحسين التصميم\n• إصلاح الأخطاء وتحسين الأداء",
   "mandatory": false,
-  "releaseDate": "2024-02-13",
+  "releaseDate": "2026-02-13",
   "minAndroidVersion": 21,
   "features": [
-    "تحسين الأداء",
-    "واجهة محسّنة",
+    "تحسين التصميم",
     "إصلاح الأخطاء"
   ]
 }
